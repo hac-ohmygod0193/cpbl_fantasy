@@ -109,11 +109,9 @@ def main():
         get_player_acnt()
     with open('player_acnt_list.json', 'r', encoding='utf-8') as file:
         player_acnt_list = json.load(file)
-    '''
     for player_name, acnt in player_acnt_list.items():
         get_player_performance(player_name,acnt)
         time.sleep(0.1)
-    '''
     end_time = time.time()
     execution_time = end_time - start_time
     execution_hours = execution_time // 3600
