@@ -1,130 +1,122 @@
 import requests
 from bs4 import BeautifulSoup
+import json
+import pandas as pd
 import os
-import datetime
-import re
-from groq import Groq
-
-# Load environment variables
-e3p_cookie = os.environ["E3P_COOKIE"]
-line_notify_token = os.environ["LINE_NOTIFY_TOKEN"]
-groq_api_keys = os.environ["GROQ_API_KEY"]
-client = Groq(
-    api_key=groq_api_keys,
-)
-model_mapping = {
-    "0": "llama2-70b-4096",
-    "1": "mixtral-8x7b-32768",
-    "2": "gemma-7b-it",
+import codecs
+import time
+from tqdm import tqdm
+headers_get = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+    'Cookie': 'FSize=M; FSize=M; __RequestVerificationToken=0x4WQ2_ArLMaBclx-C-gvDpzg2b5wb1ch-UhNcGOxWMuY8ABMrp-jrSolVTOP5RlKMJTPxbwoiiTLnFBQKGfWoXUwjI1',
 }
-
-current_time = datetime.datetime.now()+datetime.timedelta(hours=8)
-current_date = current_time.date()
-print(current_date)
-def groq_api(llm_prompt: str):
-    select_model = "1"
-    model = model_mapping[select_model]
-    chat_completion = client.chat.completions.create(
-            messages=[
-                {
-                    "role": "user",
-                    "content": str(llm_prompt),
-                    
-                }
-            ],
-            model=model,temperature = 0.0,
-    )
-    response = chat_completion.choices[0].message.content
-    if model == "gemma-7b-it":
-        response = response.replace('*', '').replace('-', '')
-    return response
-
-def lineNotifyMessage(token, msg):
-    headers = {
-        "Authorization": "Bearer " + token,
-        "Content-Type": "application/x-www-form-urlencoded"
+headers_post = {
+    'authority': 'www.cpbl.com.tw',
+    'method': 'POST',
+    'path': '/team/getfollowscore',
+    'scheme': 'https',
+    'Accept': '*/*',
+    'Accept-Encoding': 'gzip, deflate, br, zstd',
+    'Accept-Language': 'zh-TW,zh;q=0.5',
+    'Content-Length': '78',
+    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+    'Cookie': 'FSize=M; FSize=M; __RequestVerificationToken=0x4WQ2_ArLMaBclx-C-gvDpzg2b5wb1ch-UhNcGOxWMuY8ABMrp-jrSolVTOP5RlKMJTPxbwoiiTLnFBQKGfWoXUwjI1',
+    'Origin': 'https://www.cpbl.com.tw',
+    'Referer': 'https://www.cpbl.com.tw/team/follow?Acnt=0000000929',
+    'Requestverificationtoken': 'F6CBjz9VyZlfeRni9RVDSYsi1uifrBmXopone1rK8Oq5OSwkT-d7ShNDj9Hw_xUlXcHiS4c3owAieoYG_JYACf4fElA1:Wb_PysN7xSmagp77Hygx6gDWjgbwD6dTGCsxzSgh7_DvG30eMY6ebf8Ah80rJGpq4_LHIbeDyK80S2tUYjO05I1y6Yc1',
+    'Sec-Ch-Ua': '"Brave";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+    'Sec-Ch-Ua-Mobile': '?0',
+    'Sec-Ch-Ua-Platform': '"Windows"',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Gpc': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+    'X-Requested-With': 'XMLHttpRequest'
+}
+def get_player_acnt():
+    player_acnt_list = {}
+    url = 'https://www.cpbl.com.tw/player'
+    response = requests.get(url, headers=headers_get)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    teams_list = soup.find_all(name = 'div', attrs={'class':'PlayersList'})
+    for team in teams_list:
+        players = team.find_all('a')
+        for player in players:
+            acnt = player['href'].split('=')[-1]
+            player_name = player.text
+            player_acnt_list[player_name] = acnt
+    with open('player_acnt_list.json', 'w', encoding='utf-8') as file:
+        json.dump(player_acnt_list, file, ensure_ascii=False, indent=4)
+def get_player_performance(player_name,acnt):
+    dir = './player_performance/'
+    url = f'https://www.cpbl.com.tw/team/person?acnt={acnt}'
+    response = requests.get(url, headers=headers_get)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    defendStation = soup.find('div', class_='desc').text
+    data = {
+            'acnt': f'{acnt}',
+            'defendStation': f'{defendStation}',
+            'year': '2024',
+            'kindCode': 'A'
     }
 
-    payload = {'message': msg}
-    r = requests.post("https://notify-api.line.me/api/notify", headers=headers, params=payload)
-    return r.status_code
-
-
-prompt = """
----------------------
-{message}
----------------------
-Summarize this homework announcement for me in Traditional Chinese and less than 50 words.
-Use only bullet points to summarize the announcement.
-Don't include any unnecessary information.
-公告內容摘要如下:
-"""
-
-
-def send_e3_hw_announcement(url: str):
-    """Fetch the page content"""
-    headers = {
-        "Cookie":
-        e3p_cookie,
-        "User-Agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-    }
-    requests.adapters.DEFAULT_RETRIES = 5
-    html = requests.get(url, headers=headers).text
-
-    with open('test.html', 'w', encoding='utf-8') as f:
-        f.write(html)
-
-    soup = BeautifulSoup(html, "html.parser")
-    headlines = soup.find_all(name="h3",
-                              attrs={"class": "name d-inline-block"})
-    tags = soup.find_all(name="div", attrs={"class": "event mt-3"})
-    final_message = ""
-    prefix_message = "\n今天日期: " + str(
-        current_date) + '\n' + "近三日的作業公告\n" + '=' * 16 + '\n'
-    more_than_n_days = False
-    hw_time_delta = 3
-    for i in range(len(tags)):
-        block = tags[i]
-        headline = headlines[i]
-        message = "\n"
-        block_title = block.find_all(name="div", attrs={"class": "col-11"})
-        message += headline.text + '\n' + '截止時間:\n'
-        for title in block_title[:2]:
-            if title.text == '課程事件':
-                continue
-            date_pattern = r"\d{2}月 \d{2}日"
-            date_match = re.search(date_pattern, title.text)
-            if date_match:
-                date = date_match.group(0)
-                date_obj = datetime.datetime.strptime(date, "%m月 %d日")
-                date_obj = date_obj.replace(year=current_date.year)
-                delta = date_obj.date() - current_date
-                if 0 <= delta.days <= hw_time_delta:
-                    pass
-                else:
-                    date_obj = date_obj.replace(year=current_date.year + 1)
-                    delta = date_obj.date() - current_date
-                    if 0 <= delta.days <= hw_time_delta:
-                        pass
-                    else:
-                        more_than_n_days = True
-                        break
-            message += title.text + '\n'
-        if more_than_n_days:
-            break
-        if block_title[2].text == '\n':
-            response = ""
+    url = 'https://www.cpbl.com.tw/team/getfollowscore'
+    response = requests.post(url,headers=headers_post,data=data)
+    if response.status_code == 200:
+        # Decode the JSON string
+        decoded_data = json.loads(response.text)
+        # Print the decoded data
+        tables = decoded_data['FollowScore']
+        if tables=="[]":
+            #print('No data',player_name)
+            return
+        # Convert the string type dictionary to a dictionary
+        tables = json.loads(tables)
+        for key in ['SId', 'KindCode', 'FightTeamCode']:
+            tables[0].pop(key, None)
+        if defendStation == '投手':
+            player_name = tables[0]['PitcherName']
         else:
-            llm_prompt = prompt.format(message=block_title[2].text)
-            response = groq_api(llm_prompt)
-            message += '\n'+ response + '\n'
-        final_message += (message + '\n課程:\n' + block_title[-1].text[12:]+'\n'+'=' * 16 + '\n')
-    if (final_message == ""):
-        final_message = "\n今天日期: " + str(current_date) + "\n恭喜! 近三日無作業公告"
+            player_name = tables[0]['HitterName']
+        # Load JSON from file if it exists
+        if os.path.exists(dir+player_name+'.json'):
+            with open(dir+player_name+'.json', 'r',encoding='utf-8') as file:
+                json_data = json.load(file)
+        else:
+            # Create an empty dictionary
+            json_data = {}
+            # Iterate over the keys in tables
+            for key in tables[0]:
+                # Add the key to the dictionary with an empty list as the value
+                json_data[key] = []
+        if tables[0]['GameDate'] in json_data['GameDate']:
+            #print('Data already exists',player_name)
+            return
+        for i in tables[0]:
+            json_data[i].append(tables[0][i])
+        # Save the dictionary to a JSON file with Chinese characters
+        with open(dir+player_name+'.json', 'w', encoding='utf-8') as file:
+            json.dump(json_data, file, ensure_ascii=False, indent=4)
     else:
-        final_message = prefix_message + '\n' + final_message
-    lineNotifyMessage(line_notify_token,  final_message)
+        print('Request failed. Status code:', response.status_code)
 
-url = 'https://e3p.nycu.edu.tw/calendar/view.php?view=upcoming'
-send_e3_hw_announcement(url)
+
+def main():
+    start_time = time.time()
+    if not os.path.exists('./player_performance/'):
+        os.makedirs('./player_performance/')
+    if not os.path.exists('player_acnt_list.json'):
+        get_player_acnt()
+    with open('player_acnt_list.json', 'r', encoding='utf-8') as file:
+        player_acnt_list = json.load(file)
+    for player_name, acnt in tqdm(player_acnt_list.items()):
+        get_player_performance(player_name,acnt)
+    end_time = time.time()
+    execution_time = end_time - start_time
+    execution_hours = execution_time // 3600
+    execution_minutes = (execution_time % 3600) // 60
+    execution_seconds = execution_time % 60
+    print(f"Execution time: {execution_hours} hours, {execution_minutes} minutes, {execution_seconds} seconds")
+if __name__ == '__main__':
+    main()    
