@@ -5,6 +5,8 @@ import os
 import codecs
 import time
 from tqdm import tqdm
+from queue import Queue
+import threading
 headers_get = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
     'Cookie': 'FSize=M; FSize=M; __RequestVerificationToken=0x4WQ2_ArLMaBclx-C-gvDpzg2b5wb1ch-UhNcGOxWMuY8ABMrp-jrSolVTOP5RlKMJTPxbwoiiTLnFBQKGfWoXUwjI1',
@@ -34,7 +36,7 @@ headers_post = {
     'X-Requested-With': 'XMLHttpRequest'
 }
 def get_player_acnt():
-    player_acnt_list = {}
+    players_acnt_list = []
     url = 'https://www.cpbl.com.tw/player'
     response = requests.get(url, headers=headers_get)
     soup = BeautifulSoup(response.text, 'html.parser')
@@ -44,62 +46,96 @@ def get_player_acnt():
         for player in players:
             acnt = player['href'].split('=')[-1]
             player_name = player.text
-            player_acnt_list[player_name] = acnt
-    with open('player_acnt_list.json', 'w', encoding='utf-8') as file:
-        json.dump(player_acnt_list, file, ensure_ascii=False, indent=4)
-def get_player_performance(player_name,acnt):
-    dir = './player_performance/'
-    url = f'https://www.cpbl.com.tw/team/person?acnt={acnt}'
-    response = requests.get(url, headers=headers_get)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    defendStation = soup.find('div', class_='desc').text
-    data = {
-            'acnt': f'{acnt}',
-            'defendStation': f'{defendStation}',
-            'year': '2024',
-            'kindCode': 'A'
-    }
+            data = {
+                'player_name': player_name,
+                'acnt': acnt,
+            }
+            players_acnt_list.append(data)
+    with open("player_acnt_list.json", "w", encoding="utf-8") as outfile:
+        json.dump(players_acnt_list, outfile, ensure_ascii=False, indent=4)
 
-    url = 'https://www.cpbl.com.tw/team/getfollowscore'
-    response = requests.post(url,headers=headers_post,data=data)
-    if response.status_code == 200:
-        # Decode the JSON string
-        decoded_data = json.loads(response.text)
-        # Print the decoded data
-        tables = decoded_data['FollowScore']
-        if tables=="[]":
-            #print('No data',player_name)
-            return
-        # Convert the string type dictionary to a dictionary
-        tables = json.loads(tables)
-        for key in ['SId', 'KindCode', 'FightTeamCode']:
-            tables[0].pop(key, None)
-        if defendStation == '投手':
-            player_name = tables[0]['PitcherName']
-        else:
-            player_name = tables[0]['HitterName']
-        # Load JSON from file if it exists
-        if os.path.exists(dir+player_name+'.json'):
-            with open(dir+player_name+'.json', 'r',encoding='utf-8') as file:
-                json_data = json.load(file)
-        else:
-            # Create an empty dictionary
-            json_data = {}
-            # Iterate over the keys in tables
-            for key in tables[0]:
-                # Add the key to the dictionary with an empty list as the value
-                json_data[key] = []
-        if tables[0]['GameDate'] in json_data['GameDate']:
-            #print('Data already exists',player_name)
-            return
-        for i in tables[0]:
-            json_data[i].append(tables[0][i])
-        # Save the dictionary to a JSON file with Chinese characters
-        with open(dir+player_name+'.json', 'w', encoding='utf-8') as file:
-            json.dump(json_data, file, ensure_ascii=False, indent=4)
-    else:
-        print('Request failed. Status code:', response.status_code)
+def get_player_performance(players_queue):
+    print("Thread started")
+    while True:
+        player = players_queue.get()
+        if player is None:
+            print("Thread finished")
+            break
+        player_name = player["player_name"]
+        acnt = player["acnt"]
+        print(f"Processing {player_name} ({acnt})")
+        dir = './player_performance/'
+        url = f'https://www.cpbl.com.tw/team/person?acnt={acnt}'
+        response = requests.get(url, headers=headers_get)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        defendStation = soup.find('div', class_='desc').text
+        data = {
+                'acnt': f'{acnt}',
+                'defendStation': f'{defendStation}',
+                'year': '2024',
+                'kindCode': 'A'
+        }
 
+        url = 'https://www.cpbl.com.tw/team/getfollowscore'
+        response = requests.post(url,headers=headers_post,data=data)
+        time.sleep(0.1)
+        if response.status_code == 200:
+            # Decode the JSON string
+            decoded_data = json.loads(response.text)
+            # Print the decoded data
+            tables = decoded_data['FollowScore']
+            if tables=="[]":
+                #print('No data',player_name)
+                continue
+            # Convert the string type dictionary to a dictionary
+            tables = json.loads(tables)
+            for key in ['SId', 'KindCode', 'FightTeamCode']:
+                tables[0].pop(key, None)
+            if defendStation == '投手':
+                player_name = tables[0]['PitcherName']
+            else:
+                player_name = tables[0]['HitterName']
+            # Load JSON from file if it exists
+            if os.path.exists(dir+player_name+'.json'):
+                with open(dir+player_name+'.json', 'r',encoding='utf-8') as file:
+                    json_data = json.load(file)
+            else:
+                # Create an empty dictionary
+                json_data = {}
+                # Iterate over the keys in tables
+                for key in tables[0]:
+                    # Add the key to the dictionary with an empty list as the value
+                    json_data[key] = []
+            if tables[0]['GameDate'] in json_data['GameDate']:
+                #print('Data already exists',player_name)
+                continue
+            for i in tables[0]:
+                json_data[i].append(tables[0][i])
+            # Save the dictionary to a JSON file with Chinese characters
+            with open(dir+player_name+'.json', 'w', encoding='utf-8') as file:
+                json.dump(json_data, file, ensure_ascii=False, indent=4)
+        else:
+            print('Request failed. Status code:', response.status_code)
+
+def get_daily_performance():
+    with open('player_acnt_list.json', 'r', encoding='utf-8') as infile:
+        players = json.load(infile)
+    players_queue = Queue()
+    for player in tqdm(players, desc="Enqueuing players", unit="player"):
+        players_queue.put(player)
+    num_threads = 5
+    threads = []
+    for _ in range(num_threads):
+        thread = threading.Thread(
+            target=get_player_performance,
+            args=(players_queue,),
+        )
+        thread.start()
+        threads.append(thread)
+
+
+    for thread in threads:
+        thread.join()
 
 def main():
     start_time = time.time()
@@ -107,11 +143,7 @@ def main():
         os.makedirs('./player_performance/')
     if not os.path.exists('player_acnt_list.json'):
         get_player_acnt()
-    with open('player_acnt_list.json', 'r', encoding='utf-8') as file:
-        player_acnt_list = json.load(file)
-    for player_name, acnt in player_acnt_list.items():
-        get_player_performance(player_name,acnt)
-        time.sleep(0.1)
+    get_daily_performance()
     end_time = time.time()
     execution_time = end_time - start_time
     execution_hours = execution_time // 3600
