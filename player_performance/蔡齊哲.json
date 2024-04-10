@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "樂天桃猿"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        17
+    ],
+    "GameDate": [
+        "2024-04-07T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000000778"
+    ],
+    "PitcherName": [
+        "蔡齊哲"
+    ],
+    "FieldNo": [
+        "F29"
+    ],
+    "TeamNo": [
+        "ACN011"
+    ],
+    "TotalTeamGames": [
+        6
+    ],
+    "RoleType": [
+        "後援"
+    ],
+    "GameResult": [
+        "無"
+    ],
+    "InningPitchedCnt": [
+        0.2
+    ],
+    "PlateAppearances": [
+        4
+    ],
+    "PitchCnt": [
+        15
+    ],
+    "HittingCnt": [
+        2
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "StrikeOutCnt": [
+        0
+    ],
+    "RunCnt": [
+        1
+    ],
+    "EarnedRunCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        0
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        1
+    ],
+    "FlyOut": [
+        1
+    ],
+    "Era": [
+        0.0
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        11
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}

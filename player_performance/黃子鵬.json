@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "中信兄弟"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        11
+    ],
+    "GameDate": [
+        "2024-04-05T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000002274"
+    ],
+    "PitcherName": [
+        "黃子鵬"
+    ],
+    "FieldNo": [
+        "F29"
+    ],
+    "TeamNo": [
+        "AJL011"
+    ],
+    "TotalTeamGames": [
+        4
+    ],
+    "RoleType": [
+        "先發"
+    ],
+    "GameResult": [
+        "敗"
+    ],
+    "InningPitchedCnt": [
+        6.0
+    ],
+    "PlateAppearances": [
+        32
+    ],
+    "PitchCnt": [
+        107
+    ],
+    "HittingCnt": [
+        12
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "StrikeOutCnt": [
+        3
+    ],
+    "RunCnt": [
+        4
+    ],
+    "EarnedRunCnt": [
+        4
+    ],
+    "BasesONBallsCnt": [
+        0
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        2
+    ],
+    "GroundOut": [
+        11
+    ],
+    "FlyOut": [
+        4
+    ],
+    "Era": [
+        6.0
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        73
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        2
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}

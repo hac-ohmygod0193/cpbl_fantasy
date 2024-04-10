@@ -1,0 +1,116 @@
+{
+    "FightTeamAbbrName": [
+        "台鋼雄鷹"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        18
+    ],
+    "GameDate": [
+        "2024-04-07T00:00:00"
+    ],
+    "HitterAcnt": [
+        "0000003337"
+    ],
+    "HitterName": [
+        "蔣智賢"
+    ],
+    "FieldNo": [
+        "F09"
+    ],
+    "TeamNo": [
+        "AEO011"
+    ],
+    "TotalTeamGames": [
+        6
+    ],
+    "PlateAppearances": [
+        4
+    ],
+    "HitCnt": [
+        3
+    ],
+    "RunBattedINCnt": [
+        0
+    ],
+    "ScoreCnt": [
+        0
+    ],
+    "HittingCnt": [
+        1
+    ],
+    "OneBaseHitCnt": [
+        1
+    ],
+    "TwoBaseHitCnt": [
+        0
+    ],
+    "ThreeBaseHitCnt": [
+        0
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "TotalBases": [
+        1
+    ],
+    "StrikeOutCnt": [
+        0
+    ],
+    "StealBaseOKCnt": [
+        0
+    ],
+    "StealBaseFailCnt": [
+        0
+    ],
+    "Avg": [
+        0.267
+    ],
+    "SacrificeHitCnt": [
+        0
+    ],
+    "SacrificeFlyCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        1
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "DoublePlayBatCnt": [
+        0
+    ],
+    "TripplePlayBatCnt": [
+        0
+    ],
+    "Lobs": [
+        2
+    ],
+    "PutoutCnt": [
+        4
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        1
+    ],
+    "CaughtStealingCnt": [
+        0
+    ],
+    "PassedBallCnt": [
+        0
+    ]
+}
