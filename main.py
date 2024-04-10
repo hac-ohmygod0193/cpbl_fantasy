@@ -55,15 +55,12 @@ def get_player_acnt():
         json.dump(players_acnt_list, outfile, ensure_ascii=False, indent=4)
 
 def get_player_performance(players_queue):
-    print("Thread started")
     while True:
         player = players_queue.get()
         if player is None:
-            print("Thread finished")
             break
         player_name = player["player_name"]
         acnt = player["acnt"]
-        print(f"Processing {player_name} ({acnt})")
         dir = './player_performance/'
         url = f'https://www.cpbl.com.tw/team/person?acnt={acnt}'
         response = requests.get(url, headers=headers_get)
