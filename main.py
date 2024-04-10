@@ -129,7 +129,10 @@ def get_daily_performance():
         )
         thread.start()
         threads.append(thread)
-
+        
+    # Close threads
+    for _ in range(num_threads):
+        players_queue.put(None)
 
     for thread in threads:
         thread.join()
