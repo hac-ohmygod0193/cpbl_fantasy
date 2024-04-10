@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "富邦悍將"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        12
+    ],
+    "GameDate": [
+        "2024-04-05T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000007244"
+    ],
+    "PitcherName": [
+        "笠原祥太郎"
+    ],
+    "FieldNo": [
+        "F09"
+    ],
+    "TeamNo": [
+        "AKP011"
+    ],
+    "TotalTeamGames": [
+        3
+    ],
+    "RoleType": [
+        "先發"
+    ],
+    "GameResult": [
+        "勝"
+    ],
+    "InningPitchedCnt": [
+        6.0
+    ],
+    "PlateAppearances": [
+        26
+    ],
+    "PitchCnt": [
+        108
+    ],
+    "HittingCnt": [
+        6
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "StrikeOutCnt": [
+        6
+    ],
+    "RunCnt": [
+        0
+    ],
+    "EarnedRunCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        1
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        7
+    ],
+    "FlyOut": [
+        6
+    ],
+    "Era": [
+        0.0
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        64
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}

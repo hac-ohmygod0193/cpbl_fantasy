@@ -1,0 +1,116 @@
+{
+    "FightTeamAbbrName": [
+        "統一7-ELEVEn獅"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        20
+    ],
+    "GameDate": [
+        "2024-04-09T00:00:00"
+    ],
+    "HitterAcnt": [
+        "0000001119"
+    ],
+    "HitterName": [
+        "許基宏"
+    ],
+    "FieldNo": [
+        "F04"
+    ],
+    "TeamNo": [
+        "ACN011"
+    ],
+    "TotalTeamGames": [
+        7
+    ],
+    "PlateAppearances": [
+        4
+    ],
+    "HitCnt": [
+        4
+    ],
+    "RunBattedINCnt": [
+        0
+    ],
+    "ScoreCnt": [
+        0
+    ],
+    "HittingCnt": [
+        2
+    ],
+    "OneBaseHitCnt": [
+        2
+    ],
+    "TwoBaseHitCnt": [
+        0
+    ],
+    "ThreeBaseHitCnt": [
+        0
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "TotalBases": [
+        2
+    ],
+    "StrikeOutCnt": [
+        1
+    ],
+    "StealBaseOKCnt": [
+        0
+    ],
+    "StealBaseFailCnt": [
+        0
+    ],
+    "Avg": [
+        0.47
+    ],
+    "SacrificeHitCnt": [
+        0
+    ],
+    "SacrificeFlyCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        0
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "DoublePlayBatCnt": [
+        0
+    ],
+    "TripplePlayBatCnt": [
+        0
+    ],
+    "Lobs": [
+        2
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "CaughtStealingCnt": [
+        0
+    ],
+    "PassedBallCnt": [
+        0
+    ]
+}

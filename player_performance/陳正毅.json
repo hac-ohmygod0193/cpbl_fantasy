@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "中信兄弟"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        10
+    ],
+    "GameDate": [
+        "2024-04-04T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000006771"
+    ],
+    "PitcherName": [
+        "陳正毅"
+    ],
+    "FieldNo": [
+        "F29"
+    ],
+    "TeamNo": [
+        "AKP011"
+    ],
+    "TotalTeamGames": [
+        2
+    ],
+    "RoleType": [
+        "後援"
+    ],
+    "GameResult": [
+        "無"
+    ],
+    "InningPitchedCnt": [
+        1.0
+    ],
+    "PlateAppearances": [
+        3
+    ],
+    "PitchCnt": [
+        13
+    ],
+    "HittingCnt": [
+        0
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "StrikeOutCnt": [
+        0
+    ],
+    "RunCnt": [
+        0
+    ],
+    "EarnedRunCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        1
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        1
+    ],
+    "FlyOut": [
+        1
+    ],
+    "Era": [
+        0.0
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        6
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "台鋼雄鷹"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        18
+    ],
+    "GameDate": [
+        "2024-04-07T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000006739"
+    ],
+    "PitcherName": [
+        "李東洺"
+    ],
+    "FieldNo": [
+        "F09"
+    ],
+    "TeamNo": [
+        "AEO011"
+    ],
+    "TotalTeamGames": [
+        6
+    ],
+    "RoleType": [
+        "中繼"
+    ],
+    "GameResult": [
+        "無"
+    ],
+    "InningPitchedCnt": [
+        0.1
+    ],
+    "PlateAppearances": [
+        4
+    ],
+    "PitchCnt": [
+        18
+    ],
+    "HittingCnt": [
+        1
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "StrikeOutCnt": [
+        0
+    ],
+    "RunCnt": [
+        0
+    ],
+    "EarnedRunCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        2
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        1
+    ],
+    "FlyOut": [
+        0
+    ],
+    "Era": [
+        20.25
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        7
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}

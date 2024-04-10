@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "味全龍"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        19
+    ],
+    "GameDate": [
+        "2024-04-07T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000006849"
+    ],
+    "PitcherName": [
+        "尹柏淮"
+    ],
+    "FieldNo": [
+        "F10"
+    ],
+    "TeamNo": [
+        "ADD011"
+    ],
+    "TotalTeamGames": [
+        6
+    ],
+    "RoleType": [
+        "中繼"
+    ],
+    "GameResult": [
+        "敗"
+    ],
+    "InningPitchedCnt": [
+        1.0
+    ],
+    "PlateAppearances": [
+        6
+    ],
+    "PitchCnt": [
+        18
+    ],
+    "HittingCnt": [
+        3
+    ],
+    "HomeRunCnt": [
+        1
+    ],
+    "StrikeOutCnt": [
+        0
+    ],
+    "RunCnt": [
+        3
+    ],
+    "EarnedRunCnt": [
+        3
+    ],
+    "BasesONBallsCnt": [
+        0
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        1
+    ],
+    "FlyOut": [
+        2
+    ],
+    "Era": [
+        9.0
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        1
+    ],
+    "StrikeCnt": [
+        11
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        1
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}

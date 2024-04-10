@@ -1,0 +1,116 @@
+{
+    "FightTeamAbbrName": [
+        "富邦悍將"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        9
+    ],
+    "GameDate": [
+        "2024-04-04T00:00:00"
+    ],
+    "HitterAcnt": [
+        "0000001606"
+    ],
+    "HitterName": [
+        "林岱安"
+    ],
+    "FieldNo": [
+        "F08"
+    ],
+    "TeamNo": [
+        "ADD011"
+    ],
+    "TotalTeamGames": [
+        3
+    ],
+    "PlateAppearances": [
+        4
+    ],
+    "HitCnt": [
+        3
+    ],
+    "RunBattedINCnt": [
+        0
+    ],
+    "ScoreCnt": [
+        0
+    ],
+    "HittingCnt": [
+        1
+    ],
+    "OneBaseHitCnt": [
+        1
+    ],
+    "TwoBaseHitCnt": [
+        0
+    ],
+    "ThreeBaseHitCnt": [
+        0
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "TotalBases": [
+        1
+    ],
+    "StrikeOutCnt": [
+        0
+    ],
+    "StealBaseOKCnt": [
+        0
+    ],
+    "StealBaseFailCnt": [
+        0
+    ],
+    "Avg": [
+        0.25
+    ],
+    "SacrificeHitCnt": [
+        1
+    ],
+    "SacrificeFlyCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        0
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "DoublePlayBatCnt": [
+        0
+    ],
+    "TripplePlayBatCnt": [
+        0
+    ],
+    "Lobs": [
+        0
+    ],
+    "PutoutCnt": [
+        10
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        1
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "CaughtStealingCnt": [
+        0
+    ],
+    "PassedBallCnt": [
+        0
+    ]
+}
