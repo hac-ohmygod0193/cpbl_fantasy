@@ -1,116 +1,154 @@
 {
     "FightTeamAbbrName": [
-        "統一7-ELEVEn獅"
+        "統一7-ELEVEn獅",
+        "富邦悍將"
     ],
     "Year": [
+        "2024",
         "2024"
     ],
     "GameSno": [
-        19
+        19,
+        25
     ],
     "GameDate": [
-        "2024-04-07T00:00:00"
+        "2024-04-07T00:00:00",
+        "2024-04-11T00:00:00"
     ],
     "HitterAcnt": [
+        "0000005553",
         "0000005553"
     ],
     "HitterName": [
+        "張祐銘",
         "張祐銘"
     ],
     "FieldNo": [
+        "F10",
         "F10"
     ],
     "TeamNo": [
+        "AAA011",
         "AAA011"
     ],
     "TotalTeamGames": [
-        7
+        7,
+        9
     ],
     "PlateAppearances": [
-        4
+        4,
+        2
     ],
     "HitCnt": [
-        3
+        3,
+        2
     ],
     "RunBattedINCnt": [
+        0,
         0
     ],
     "ScoreCnt": [
+        0,
         0
     ],
     "HittingCnt": [
+        1,
         1
     ],
     "OneBaseHitCnt": [
+        1,
         1
     ],
     "TwoBaseHitCnt": [
+        0,
         0
     ],
     "ThreeBaseHitCnt": [
+        0,
         0
     ],
     "HomeRunCnt": [
+        0,
         0
     ],
     "TotalBases": [
+        1,
         1
     ],
     "StrikeOutCnt": [
-        0
-    ],
-    "StealBaseOKCnt": [
+        0,
         1
     ],
+    "StealBaseOKCnt": [
+        1,
+        0
+    ],
     "StealBaseFailCnt": [
+        0,
         0
     ],
     "Avg": [
-        0.273
+        0.273,
+        0.308
     ],
     "SacrificeHitCnt": [
+        0,
         0
     ],
     "SacrificeFlyCnt": [
+        0,
         0
     ],
     "BasesONBallsCnt": [
+        0,
         0
     ],
     "IntentionalBasesONBallsCnt": [
+        0,
         0
     ],
     "HitBYPitchCnt": [
-        1
+        1,
+        0
     ],
     "DoublePlayBatCnt": [
+        0,
         0
     ],
     "TripplePlayBatCnt": [
+        0,
         0
     ],
     "Lobs": [
-        3
+        3,
+        1
     ],
     "PutoutCnt": [
-        3
+        3,
+        2
     ],
     "AssistCnt": [
+        0,
         0
     ],
     "JoinDoublePlayCnt": [
+        0,
         0
     ],
     "JoinTripplePlayCnt": [
+        0,
         0
     ],
     "ErrorCnt": [
+        0,
         0
     ],
     "CaughtStealingCnt": [
+        0,
         0
     ],
     "PassedBallCnt": [
+        0,
         0
     ]
 }
