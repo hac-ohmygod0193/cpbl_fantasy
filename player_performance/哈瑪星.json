@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "樂天桃猿"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        96
+    ],
+    "GameDate": [
+        "2024-05-15T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000007240"
+    ],
+    "PitcherName": [
+        "哈瑪星"
+    ],
+    "FieldNo": [
+        "F23"
+    ],
+    "TeamNo": [
+        "AKP011"
+    ],
+    "TotalTeamGames": [
+        29
+    ],
+    "RoleType": [
+        "先發"
+    ],
+    "GameResult": [
+        "勝"
+    ],
+    "InningPitchedCnt": [
+        7.0
+    ],
+    "PlateAppearances": [
+        28
+    ],
+    "PitchCnt": [
+        101
+    ],
+    "HittingCnt": [
+        7
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "StrikeOutCnt": [
+        8
+    ],
+    "RunCnt": [
+        0
+    ],
+    "EarnedRunCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        0
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        4
+    ],
+    "FlyOut": [
+        9
+    ],
+    "Era": [
+        2.16
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        76
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        1
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}

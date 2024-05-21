@@ -2,9 +2,11 @@
     "FightTeamAbbrName": [
         "統一7-ELEVEn獅",
         "富邦悍將",
+        "富邦悍將",
         "富邦悍將"
     ],
     "Year": [
+        "2024",
         "2024",
         "2024",
         "2024"
@@ -12,14 +14,17 @@
     "GameSno": [
         19,
         24,
-        25
+        25,
+        105
     ],
     "GameDate": [
         "2024-04-07T00:00:00",
         "2024-04-10T00:00:00",
-        "2024-04-11T00:00:00"
+        "2024-04-11T00:00:00",
+        "2024-05-19T00:00:00"
     ],
     "HitterAcnt": [
+        "0000005548",
         "0000005548",
         "0000005548",
         "0000005548"
@@ -27,9 +32,11 @@
     "HitterName": [
         "林孝程",
         "林孝程",
+        "林孝程",
         "林孝程"
     ],
     "FieldNo": [
+        "F10",
         "F10",
         "F10",
         "F10"
@@ -37,49 +44,59 @@
     "TeamNo": [
         "AAA011",
         "AAA011",
+        "AAA011",
         "AAA011"
     ],
     "TotalTeamGames": [
         7,
         8,
-        9
+        9,
+        34
     ],
     "PlateAppearances": [
         3,
         5,
-        4
+        4,
+        3
     ],
     "HitCnt": [
         3,
         4,
-        4
+        4,
+        3
     ],
     "RunBattedINCnt": [
         0,
         1,
+        0,
         0
     ],
     "ScoreCnt": [
         1,
         2,
+        0,
         0
     ],
     "HittingCnt": [
         1,
         3,
-        1
+        1,
+        0
     ],
     "OneBaseHitCnt": [
         1,
         2,
-        1
+        1,
+        0
     ],
     "TwoBaseHitCnt": [
         0,
         1,
+        0,
         0
     ],
     "ThreeBaseHitCnt": [
+        0,
         0,
         0,
         0
@@ -87,19 +104,23 @@
     "HomeRunCnt": [
         0,
         0,
+        0,
         0
     ],
     "TotalBases": [
         1,
         4,
-        1
+        1,
+        0
     ],
     "StrikeOutCnt": [
         2,
         0,
+        0,
         0
     ],
     "StealBaseOKCnt": [
+        0,
         0,
         0,
         0
@@ -107,19 +128,23 @@
     "StealBaseFailCnt": [
         0,
         0,
+        0,
         0
     ],
     "Avg": [
         0.333,
         0.571,
-        0.454
+        0.454,
+        0.312
     ],
     "SacrificeHitCnt": [
         0,
         1,
+        0,
         0
     ],
     "SacrificeFlyCnt": [
+        0,
         0,
         0,
         0
@@ -127,9 +152,11 @@
     "BasesONBallsCnt": [
         0,
         0,
+        0,
         0
     ],
     "IntentionalBasesONBallsCnt": [
+        0,
         0,
         0,
         0
@@ -137,9 +164,11 @@
     "HitBYPitchCnt": [
         0,
         0,
+        0,
         0
     ],
     "DoublePlayBatCnt": [
+        0,
         0,
         0,
         0
@@ -147,19 +176,23 @@
     "TripplePlayBatCnt": [
         0,
         0,
+        0,
         0
     ],
     "Lobs": [
         0,
+        1,
         1,
         1
     ],
     "PutoutCnt": [
         0,
         2,
-        0
+        0,
+        2
     ],
     "AssistCnt": [
+        0,
         0,
         0,
         0
@@ -167,9 +200,11 @@
     "JoinDoublePlayCnt": [
         0,
         0,
+        0,
         0
     ],
     "JoinTripplePlayCnt": [
+        0,
         0,
         0,
         0
@@ -177,14 +212,17 @@
     "ErrorCnt": [
         0,
         0,
+        0,
         0
     ],
     "CaughtStealingCnt": [
         0,
         0,
+        0,
         0
     ],
     "PassedBallCnt": [
+        0,
         0,
         0,
         0

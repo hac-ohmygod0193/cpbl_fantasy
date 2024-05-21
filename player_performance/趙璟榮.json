@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "統一7-ELEVEn獅"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        52
+    ],
+    "GameDate": [
+        "2024-04-23T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000006215"
+    ],
+    "PitcherName": [
+        "趙璟榮"
+    ],
+    "FieldNo": [
+        "F04"
+    ],
+    "TeamNo": [
+        "AAA011"
+    ],
+    "TotalTeamGames": [
+        18
+    ],
+    "RoleType": [
+        "中繼"
+    ],
+    "GameResult": [
+        "無"
+    ],
+    "InningPitchedCnt": [
+        0.2
+    ],
+    "PlateAppearances": [
+        8
+    ],
+    "PitchCnt": [
+        28
+    ],
+    "HittingCnt": [
+        3
+    ],
+    "HomeRunCnt": [
+        1
+    ],
+    "StrikeOutCnt": [
+        1
+    ],
+    "RunCnt": [
+        3
+    ],
+    "EarnedRunCnt": [
+        2
+    ],
+    "BasesONBallsCnt": [
+        2
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        2
+    ],
+    "FlyOut": [
+        0
+    ],
+    "Era": [
+        4.909
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        17
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}

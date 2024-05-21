@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "樂天桃猿"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        104
+    ],
+    "GameDate": [
+        "2024-05-19T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000006176"
+    ],
+    "PitcherName": [
+        "余謙"
+    ],
+    "FieldNo": [
+        "F19"
+    ],
+    "TeamNo": [
+        "ACN011"
+    ],
+    "TotalTeamGames": [
+        33
+    ],
+    "RoleType": [
+        "先發"
+    ],
+    "GameResult": [
+        "敗"
+    ],
+    "InningPitchedCnt": [
+        6.0
+    ],
+    "PlateAppearances": [
+        23
+    ],
+    "PitchCnt": [
+        79
+    ],
+    "HittingCnt": [
+        5
+    ],
+    "HomeRunCnt": [
+        1
+    ],
+    "StrikeOutCnt": [
+        0
+    ],
+    "RunCnt": [
+        3
+    ],
+    "EarnedRunCnt": [
+        3
+    ],
+    "BasesONBallsCnt": [
+        0
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        8
+    ],
+    "FlyOut": [
+        10
+    ],
+    "Era": [
+        4.5
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        53
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        1
+    ],
+    "BalkCnt": [
+        1
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        1
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}
