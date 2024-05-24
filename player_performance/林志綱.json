@@ -1,116 +1,154 @@
 {
     "FightTeamAbbrName": [
-        "樂天桃猿"
+        "樂天桃猿",
+        "台鋼雄鷹"
     ],
     "Year": [
+        "2024",
         "2024"
     ],
     "GameSno": [
-        98
+        98,
+        112
     ],
     "GameDate": [
-        "2024-05-17T00:00:00"
+        "2024-05-17T00:00:00",
+        "2024-05-23T00:00:00"
     ],
     "HitterAcnt": [
+        "0000005342",
         "0000005342"
     ],
     "HitterName": [
+        "林志綱",
         "林志綱"
     ],
     "FieldNo": [
-        "F19"
+        "F19",
+        "F09"
     ],
     "TeamNo": [
+        "ACN011",
         "ACN011"
     ],
     "TotalTeamGames": [
-        31
+        31,
+        35
     ],
     "PlateAppearances": [
-        0
+        0,
+        1
     ],
     "HitCnt": [
-        0
+        0,
+        1
     ],
     "RunBattedINCnt": [
+        0,
         0
     ],
     "ScoreCnt": [
+        0,
         0
     ],
     "HittingCnt": [
+        0,
         0
     ],
     "OneBaseHitCnt": [
+        0,
         0
     ],
     "TwoBaseHitCnt": [
+        0,
         0
     ],
     "ThreeBaseHitCnt": [
+        0,
         0
     ],
     "HomeRunCnt": [
+        0,
         0
     ],
     "TotalBases": [
+        0,
         0
     ],
     "StrikeOutCnt": [
+        0,
         0
     ],
     "StealBaseOKCnt": [
+        0,
         0
     ],
     "StealBaseFailCnt": [
+        0,
         0
     ],
     "Avg": [
+        0.0,
         0.0
     ],
     "SacrificeHitCnt": [
+        0,
         0
     ],
     "SacrificeFlyCnt": [
+        0,
         0
     ],
     "BasesONBallsCnt": [
+        0,
         0
     ],
     "IntentionalBasesONBallsCnt": [
+        0,
         0
     ],
     "HitBYPitchCnt": [
+        0,
         0
     ],
     "DoublePlayBatCnt": [
-        0
+        0,
+        1
     ],
     "TripplePlayBatCnt": [
+        0,
         0
     ],
     "Lobs": [
+        0,
         0
     ],
     "PutoutCnt": [
+        0,
         0
     ],
     "AssistCnt": [
+        0,
         0
     ],
     "JoinDoublePlayCnt": [
+        0,
         0
     ],
     "JoinTripplePlayCnt": [
+        0,
         0
     ],
     "ErrorCnt": [
+        0,
         0
     ],
     "CaughtStealingCnt": [
+        0,
         0
     ],
     "PassedBallCnt": [
+        0,
         0
     ]
 }
