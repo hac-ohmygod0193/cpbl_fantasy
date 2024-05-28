@@ -1,119 +1,158 @@
 {
     "FightTeamAbbrName": [
-        "中信兄弟"
+        "中信兄弟",
+        "味全龍"
     ],
     "Year": [
+        "2024",
         "2024"
     ],
     "GameSno": [
-        104
+        104,
+        114
     ],
     "GameDate": [
-        "2024-05-19T00:00:00"
+        "2024-05-19T00:00:00",
+        "2024-05-24T00:00:00"
     ],
     "PitcherAcnt": [
+        "0000003616",
         "0000003616"
     ],
     "PitcherName": [
+        "黃偉晟",
         "黃偉晟"
     ],
     "FieldNo": [
-        "F19"
+        "F19",
+        "F23"
     ],
     "TeamNo": [
+        "AJL011",
         "AJL011"
     ],
     "TotalTeamGames": [
-        32
+        32,
+        34
     ],
     "RoleType": [
+        "中繼",
         "中繼"
     ],
     "GameResult": [
-        "中繼成功"
+        "中繼成功",
+        "無"
     ],
     "InningPitchedCnt": [
+        1.0,
         1.0
     ],
     "PlateAppearances": [
+        3,
         3
     ],
     "PitchCnt": [
+        14,
         14
     ],
     "HittingCnt": [
-        0
+        0,
+        1
     ],
     "HomeRunCnt": [
+        0,
         0
     ],
     "StrikeOutCnt": [
-        1
+        1,
+        0
     ],
     "RunCnt": [
+        0,
         0
     ],
     "EarnedRunCnt": [
+        0,
         0
     ],
     "BasesONBallsCnt": [
+        0,
         0
     ],
     "IntentionalBasesONBallsCnt": [
+        0,
         0
     ],
     "HitBYPitchCnt": [
+        0,
         0
     ],
     "GroundOut": [
-        0
+        0,
+        1
     ],
     "FlyOut": [
-        2
+        2,
+        1
     ],
     "Era": [
-        8.1
+        8.1,
+        7.043
     ],
     "CompleteGames": [
+        0,
         0
     ],
     "ShoutOut": [
+        0,
         0
     ],
     "NoBaseBalled": [
+        0,
         0
     ],
     "SaveFail": [
+        0,
         0
     ],
     "StrikeCnt": [
+        10,
         10
     ],
     "StealCnt": [
+        0,
         0
     ],
     "WildPitchCnt": [
+        0,
         0
     ],
     "BalkCnt": [
+        0,
         0
     ],
     "PutoutCnt": [
+        0,
         0
     ],
     "AssistCnt": [
+        0,
         0
     ],
     "JoinDoublePlayCnt": [
+        0,
         0
     ],
     "JoinTripplePlayCnt": [
+        0,
         0
     ],
     "ErrorCnt": [
+        0,
         0
     ],
     "PitchOutCnt": [
+        0,
         0
     ]
 }
