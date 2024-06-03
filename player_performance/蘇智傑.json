@@ -1,153 +1,191 @@
 {
     "FightTeamAbbrName": [
         "中信兄弟",
-        "樂天桃猿"
+        "樂天桃猿",
+        "富邦悍將"
     ],
     "Year": [
+        "2024",
         "2024",
         "2024"
     ],
     "GameSno": [
         118,
-        125
+        125,
+        133
     ],
     "GameDate": [
         "2024-05-25T00:00:00",
-        "2024-05-29T00:00:00"
+        "2024-05-29T00:00:00",
+        "2024-06-01T00:00:00"
     ],
     "HitterAcnt": [
+        "0000001474",
         "0000001474",
         "0000001474"
     ],
     "HitterName": [
         "蘇智傑",
+        "蘇智傑",
         "蘇智傑"
     ],
     "FieldNo": [
         "F04",
-        "F04"
+        "F04",
+        "F08"
     ],
     "TeamNo": [
+        "ADD011",
         "ADD011",
         "ADD011"
     ],
     "TotalTeamGames": [
         38,
-        40
+        40,
+        42
     ],
     "PlateAppearances": [
         4,
-        1
+        1,
+        4
     ],
     "HitCnt": [
         4,
-        1
+        1,
+        4
     ],
     "RunBattedINCnt": [
         0,
-        1
+        1,
+        0
     ],
     "ScoreCnt": [
         0,
+        1,
         1
     ],
     "HittingCnt": [
         0,
+        1,
         1
     ],
     "OneBaseHitCnt": [
         0,
-        0
+        0,
+        1
     ],
     "TwoBaseHitCnt": [
+        0,
         0,
         0
     ],
     "ThreeBaseHitCnt": [
         0,
+        0,
         0
     ],
     "HomeRunCnt": [
         0,
-        1
-    ],
-    "TotalBases": [
-        0,
-        4
-    ],
-    "StrikeOutCnt": [
         1,
         0
     ],
+    "TotalBases": [
+        0,
+        4,
+        1
+    ],
+    "StrikeOutCnt": [
+        1,
+        0,
+        1
+    ],
     "StealBaseOKCnt": [
+        0,
         0,
         0
     ],
     "StealBaseFailCnt": [
         0,
+        0,
         0
     ],
     "Avg": [
         0.0,
-        0.2
+        0.2,
+        0.222
     ],
     "SacrificeHitCnt": [
+        0,
         0,
         0
     ],
     "SacrificeFlyCnt": [
         0,
+        0,
         0
     ],
     "BasesONBallsCnt": [
+        0,
         0,
         0
     ],
     "IntentionalBasesONBallsCnt": [
         0,
+        0,
         0
     ],
     "HitBYPitchCnt": [
+        0,
         0,
         0
     ],
     "DoublePlayBatCnt": [
         1,
-        0
+        0,
+        1
     ],
     "TripplePlayBatCnt": [
+        0,
         0,
         0
     ],
     "Lobs": [
         0,
+        0,
         0
     ],
     "PutoutCnt": [
         0,
-        0
+        0,
+        1
     ],
     "AssistCnt": [
+        0,
         0,
         0
     ],
     "JoinDoublePlayCnt": [
         0,
+        0,
         0
     ],
     "JoinTripplePlayCnt": [
+        0,
         0,
         0
     ],
     "ErrorCnt": [
         0,
+        0,
         0
     ],
     "CaughtStealingCnt": [
         0,
+        0,
         0
     ],
     "PassedBallCnt": [
+        0,
         0,
         0
     ]
