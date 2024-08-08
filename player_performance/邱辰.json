@@ -1,0 +1,116 @@
+{
+    "FightTeamAbbrName": [
+        "中信兄弟"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        199
+    ],
+    "GameDate": [
+        "2024-07-13T00:00:00"
+    ],
+    "HitterAcnt": [
+        "0000005341"
+    ],
+    "HitterName": [
+        "邱辰"
+    ],
+    "FieldNo": [
+        "F19"
+    ],
+    "TeamNo": [
+        "AAA011"
+    ],
+    "TotalTeamGames": [
+        67
+    ],
+    "PlateAppearances": [
+        1
+    ],
+    "HitCnt": [
+        1
+    ],
+    "RunBattedINCnt": [
+        0
+    ],
+    "ScoreCnt": [
+        0
+    ],
+    "HittingCnt": [
+        1
+    ],
+    "OneBaseHitCnt": [
+        0
+    ],
+    "TwoBaseHitCnt": [
+        1
+    ],
+    "ThreeBaseHitCnt": [
+        0
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "TotalBases": [
+        2
+    ],
+    "StrikeOutCnt": [
+        0
+    ],
+    "StealBaseOKCnt": [
+        0
+    ],
+    "StealBaseFailCnt": [
+        0
+    ],
+    "Avg": [
+        0.438
+    ],
+    "SacrificeHitCnt": [
+        0
+    ],
+    "SacrificeFlyCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        0
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "DoublePlayBatCnt": [
+        0
+    ],
+    "TripplePlayBatCnt": [
+        0
+    ],
+    "Lobs": [
+        0
+    ],
+    "PutoutCnt": [
+        1
+    ],
+    "AssistCnt": [
+        0
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "CaughtStealingCnt": [
+        0
+    ],
+    "PassedBallCnt": [
+        0
+    ]
+}

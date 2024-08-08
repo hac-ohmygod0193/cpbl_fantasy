@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "樂天桃猿"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        189
+    ],
+    "GameDate": [
+        "2024-07-07T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000000368"
+    ],
+    "PitcherName": [
+        "游霆崴"
+    ],
+    "FieldNo": [
+        "F23"
+    ],
+    "TeamNo": [
+        "AEO011"
+    ],
+    "TotalTeamGames": [
+        63
+    ],
+    "RoleType": [
+        "先發"
+    ],
+    "GameResult": [
+        "無"
+    ],
+    "InningPitchedCnt": [
+        5.0
+    ],
+    "PlateAppearances": [
+        23
+    ],
+    "PitchCnt": [
+        80
+    ],
+    "HittingCnt": [
+        8
+    ],
+    "HomeRunCnt": [
+        1
+    ],
+    "StrikeOutCnt": [
+        2
+    ],
+    "RunCnt": [
+        3
+    ],
+    "EarnedRunCnt": [
+        2
+    ],
+    "BasesONBallsCnt": [
+        2
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        6
+    ],
+    "FlyOut": [
+        5
+    ],
+    "Era": [
+        2.934
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        52
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        3
+    ],
+    "JoinDoublePlayCnt": [
+        1
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}

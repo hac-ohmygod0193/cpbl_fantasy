@@ -1,157 +1,196 @@
 {
     "FightTeamAbbrName": [
         "中信兄弟",
-        "台鋼雄鷹"
+        "台鋼雄鷹",
+        "味全龍"
     ],
     "Year": [
+        "2024",
         "2024",
         "2024"
     ],
     "GameSno": [
         11,
-        96
+        96,
+        233
     ],
     "GameDate": [
         "2024-04-05T00:00:00",
-        "2024-05-15T00:00:00"
+        "2024-05-15T00:00:00",
+        "2024-08-02T00:00:00"
     ],
     "PitcherAcnt": [
+        "0000002274",
         "0000002274",
         "0000002274"
     ],
     "PitcherName": [
         "黃子鵬",
+        "黃子鵬",
         "黃子鵬"
     ],
     "FieldNo": [
         "F29",
-        "F23"
+        "F23",
+        "F12"
     ],
     "TeamNo": [
+        "AJL011",
         "AJL011",
         "AJL011"
     ],
     "TotalTeamGames": [
         4,
-        29
+        29,
+        75
     ],
     "RoleType": [
+        "先發",
         "先發",
         "先發"
     ],
     "GameResult": [
         "敗",
+        "敗",
         "敗"
     ],
     "InningPitchedCnt": [
         6.0,
-        6.0
+        6.0,
+        1.1
     ],
     "PlateAppearances": [
         32,
-        27
+        27,
+        8
     ],
     "PitchCnt": [
         107,
-        94
+        94,
+        40
     ],
     "HittingCnt": [
         12,
-        7
+        7,
+        1
     ],
     "HomeRunCnt": [
+        0,
         0,
         0
     ],
     "StrikeOutCnt": [
         3,
-        2
+        2,
+        0
     ],
     "RunCnt": [
         4,
-        3
+        3,
+        2
     ],
     "EarnedRunCnt": [
         4,
-        3
+        3,
+        2
     ],
     "BasesONBallsCnt": [
         0,
-        0
+        0,
+        3
     ],
     "IntentionalBasesONBallsCnt": [
+        0,
         0,
         0
     ],
     "HitBYPitchCnt": [
         2,
-        2
+        2,
+        0
     ],
     "GroundOut": [
         11,
-        8
+        8,
+        1
     ],
     "FlyOut": [
         4,
-        8
+        8,
+        3
     ],
     "Era": [
         6.0,
-        4.3
+        4.3,
+        4.391
     ],
     "CompleteGames": [
+        0,
         0,
         0
     ],
     "ShoutOut": [
         0,
+        0,
         0
     ],
     "NoBaseBalled": [
+        0,
         0,
         0
     ],
     "SaveFail": [
         0,
+        0,
         0
     ],
     "StrikeCnt": [
         73,
-        65
+        65,
+        21
     ],
     "StealCnt": [
+        0,
         0,
         0
     ],
     "WildPitchCnt": [
         0,
-        0
+        0,
+        1
     ],
     "BalkCnt": [
+        0,
         0,
         0
     ],
     "PutoutCnt": [
         0,
-        1
+        1,
+        0
     ],
     "AssistCnt": [
         2,
+        0,
         0
     ],
     "JoinDoublePlayCnt": [
+        0,
         0,
         0
     ],
     "JoinTripplePlayCnt": [
         0,
+        0,
         0
     ],
     "ErrorCnt": [
         0,
+        0,
         0
     ],
     "PitchOutCnt": [
+        0,
         0,
         0
     ]
