@@ -1,0 +1,119 @@
+{
+    "FightTeamAbbrName": [
+        "台鋼雄鷹"
+    ],
+    "Year": [
+        "2024"
+    ],
+    "GameSno": [
+        307
+    ],
+    "GameDate": [
+        "2024-09-06T00:00:00"
+    ],
+    "PitcherAcnt": [
+        "0000001412"
+    ],
+    "PitcherName": [
+        "江少慶"
+    ],
+    "FieldNo": [
+        "F07"
+    ],
+    "TeamNo": [
+        "AEO011"
+    ],
+    "TotalTeamGames": [
+        99
+    ],
+    "RoleType": [
+        "先發"
+    ],
+    "GameResult": [
+        "勝"
+    ],
+    "InningPitchedCnt": [
+        5.0
+    ],
+    "PlateAppearances": [
+        19
+    ],
+    "PitchCnt": [
+        77
+    ],
+    "HittingCnt": [
+        2
+    ],
+    "HomeRunCnt": [
+        0
+    ],
+    "StrikeOutCnt": [
+        6
+    ],
+    "RunCnt": [
+        1
+    ],
+    "EarnedRunCnt": [
+        0
+    ],
+    "BasesONBallsCnt": [
+        1
+    ],
+    "IntentionalBasesONBallsCnt": [
+        0
+    ],
+    "HitBYPitchCnt": [
+        0
+    ],
+    "GroundOut": [
+        4
+    ],
+    "FlyOut": [
+        6
+    ],
+    "Era": [
+        1.76
+    ],
+    "CompleteGames": [
+        0
+    ],
+    "ShoutOut": [
+        0
+    ],
+    "NoBaseBalled": [
+        0
+    ],
+    "SaveFail": [
+        0
+    ],
+    "StrikeCnt": [
+        52
+    ],
+    "StealCnt": [
+        0
+    ],
+    "WildPitchCnt": [
+        0
+    ],
+    "BalkCnt": [
+        0
+    ],
+    "PutoutCnt": [
+        0
+    ],
+    "AssistCnt": [
+        2
+    ],
+    "JoinDoublePlayCnt": [
+        0
+    ],
+    "JoinTripplePlayCnt": [
+        0
+    ],
+    "ErrorCnt": [
+        0
+    ],
+    "PitchOutCnt": [
+        0
+    ]
+}
